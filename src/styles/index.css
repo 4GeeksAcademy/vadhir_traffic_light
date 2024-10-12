@@ -1,12 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
 
-/* 
+.semáforo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    height: 320px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #333;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.luz {
+    width: 100px;
+    height: 100px;
+    margin: 1;
+    border-radius: 50%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
 
-*/
+.luz.roja {
+    background-color: rgba(172, 11, 11, 0.986);
+}
+
+.luz.amarilla {
+    background-color: rgba(255, 181, 21, 0.801);
+}
+
+.luz.verde {
+    background-color: green;
+}
+
+.luz.activa {
+    box-shadow: 0 0 30px #fff, 0 0 50px #fff;
+}
+
+
+  
